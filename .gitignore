@@ -1,3 +1,6 @@
+# Environment File
+.env
+
 # OS generated files #
 ######################
 .DS_Store
@@ -8,6 +11,3 @@
 ehthumbs.db
 Thumbs.db
 .imdone
-
-# environment variables file
-.env

@@ -10,3 +10,6 @@ echo 'Complete'
 
 # Bring up new containers (silently)
 docker-compose up -d
+
+# Watch the logs
+docker-compose logs -f
