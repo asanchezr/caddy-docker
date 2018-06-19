@@ -1,0 +1,13 @@
+LICENSE*
+README*
+.git
+.dockerignore
+.travis.yml
+public/
+.imdone
+.gitignore
+CONTRIBUTING.md
+docker-compose.travis.yml
+SECURITY.md
+tests/
+examples/

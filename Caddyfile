@@ -1,0 +1,15 @@
+localhost:3000 {
+  log stdout
+  errors stdout
+  proxy / {$API_ROOT_1} {
+    transparent
+  }
+}
+
+localhost:4000 {
+  log stdout
+  errors stdout
+  proxy / {$API_ROOT_2} {
+    transparent
+  }
+}

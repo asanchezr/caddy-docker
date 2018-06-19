@@ -1,0 +1,12 @@
+version: '2'
+services:
+    caddy:
+        image: zzrot/alpine-caddy
+        ports:
+            - "3000:3000"
+            - "4000:4000"
+        env_file: .env
+        volumes:
+            - ./Caddyfile:/etc/Caddyfile
+            - ./public:/var/www/html
+            - ./.caddy:/root/.caddy
