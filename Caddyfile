@@ -1,13 +1,21 @@
 localhost:3000 {
+  gzip
   log stdout
   errors stdout
   cors
-  proxy / {$API_ROOT_1}
+  root /var/www/html
+  proxy /api {$API_ROOT_1} {
+    header_upstream Accept-Encoding {>Accept-Encoding}
+  }
 }
 
 localhost:4000 {
+  gzip
   log stdout
   errors stdout
   cors
-  proxy / {$API_ROOT_2}
+  root /var/www/html
+  proxy /api {$API_ROOT_2} {
+    header_upstream Accept-Encoding {>Accept-Encoding}
+  }
 }

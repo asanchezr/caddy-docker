@@ -1,7 +1,9 @@
-version: '2'
+version: '3'
 services:
     caddy:
-        image: zzrot/alpine-caddy
+        build: .
+        image: alpine-caddy
+        container_name: api-proxy
         ports:
             - "3000:3000"
             - "4000:4000"
