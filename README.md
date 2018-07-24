@@ -122,5 +122,5 @@ For docker-compose.yml files, under the volumes declaration, include:
 or
 
 ```bash
-    docker run -v $(pwd)/Caddyfile:/etc/Caddyfile alpine-caddy
+$ docker run -v $(pwd)/Caddyfile:/etc/Caddyfile alpine-caddy
 ```
